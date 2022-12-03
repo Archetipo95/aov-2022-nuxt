@@ -1,0 +1,3 @@
+<template>
+  <TicTacToeBoard />
+</template>
