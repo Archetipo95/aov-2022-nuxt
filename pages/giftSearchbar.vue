@@ -1,3 +1,3 @@
 <template>
-  <Day00Board />
+  <Day01SearchBar />
 </template>

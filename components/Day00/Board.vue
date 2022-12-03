@@ -51,7 +51,7 @@ const resetGame = () => {
     ></h3>
 
     <div class="inline-grid grid-cols-3 gap-0 mb-8">
-      <TicTacToeCell
+      <Day00Cell
         v-for="(cellValue, index) in board"
         :value="cellValue"
         @click="markCell(index)"

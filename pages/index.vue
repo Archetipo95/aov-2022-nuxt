@@ -1,11 +1,22 @@
+<script setup lang="ts">
+const pages = [
+  { title: "Day 0: Pilot Puzzle TicTacToe", path: "tictactoe" },
+  { title: "Day 1: Gift Search Bar", path: "giftSearchbar" },
+];
+</script>
+
 <template>
   <div>
-    <ol class="list-decimal" start="0">
-      <li>
-        <nuxt-link to="/tictactoe" class="underline">
-          Day 0: Pilot Puzzle TicTacToe
-        </nuxt-link>
+    <ul class="space-y-1">
+      <li v-for="{ title, path } in pages" :key="path">
+        <nuxt-link :to="`/${path}`">{{ title }}</nuxt-link>
       </li>
-    </ol>
+    </ul>
   </div>
 </template>
+
+<style scoped>
+li {
+  @apply underline;
+}
+</style>
