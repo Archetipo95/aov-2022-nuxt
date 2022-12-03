@@ -1,55 +1,40 @@
 <script setup lang="ts">
-import { TicTacToeSigns } from "./Cell.props";
+import { hasWinner } from "./Utils";
 
-const WINNING_CELLS = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6],
-];
+const board = ref(Array(9).fill(null));
 
-const player = ref<TicTacToeSigns>("X");
+const currentPlayer = ref(Math.round(Math.random()));
 
-const board = ref<TicTacToeSigns[][]>([
-  ["", "", ""],
-  ["", "", ""],
-  ["", "", ""],
-]);
+const someoneHasWon = computed(() => hasWinner(board.value));
+const isDraw = computed(
+  () => !someoneHasWon.value && board.value.every((cell) => cell !== null)
+);
+const isGameOver = computed(() => someoneHasWon.value || isDraw.value);
 
-const checkWinner = (board: TicTacToeSigns[]): TicTacToeSigns => {
-  for (let i = 0; i < WINNING_CELLS.length; i++) {
-    const [a, b, c] = WINNING_CELLS[i];
+const otherPlayer = (player: number) => Math.abs(player - 1);
 
-    if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-      return board[a];
-    }
-  }
-  return "";
-};
+const getStatusMessage = computed(() =>
+  someoneHasWon.value
+    ? `<span class="material-symbols-outlined text-[60px]">
+        ${otherPlayer(currentPlayer.value) ? "circle" : "close"}
+      </span> has won!`
+    : isDraw.value
+    ? "It's a draw!"
+    : `It's <span class="material-symbols-outlined ml-1">
+        ${currentPlayer.value ? "circle" : "close"}
+      </span>'s turn.`
+);
 
-const winner = computed(() => checkWinner(board.value.flat()));
+const markCell = (index: number) => {
+  if (isGameOver.value || board.value[index] !== null) return;
 
-const makeMove = (x: number, y: number) => {
-  if (winner.value) return;
-
-  if (board.value[x][y]) return;
-
-  board.value[x][y] = player.value;
-
-  player.value = player.value === "X" ? "O" : "X";
+  board.value[index] = currentPlayer.value;
+  currentPlayer.value = otherPlayer(currentPlayer.value);
 };
 
 const resetGame = () => {
-  board.value = [
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-  ];
-  player.value = "X";
+  currentPlayer.value = Math.round(Math.random());
+  board.value = Array(9).fill(null);
 };
 </script>
 
@@ -58,33 +43,29 @@ const resetGame = () => {
     <h1 class="mb-8 text-3xl font-bold uppercase">Tic Tac Toe</h1>
 
     <h3
-      :class="`text-xl mb-4 ${
-        player === 'X' ? 'text-pink-500' : 'text-blue-400'
+      v-if="!isGameOver"
+      :class="`text-xl justify-center flex items-center mb-4 ${
+        currentPlayer ? 'text-pink-500' : 'text-blue-400'
       }`"
-    >
-      Player {{ player }}'s turn
-    </h3>
+      v-html="getStatusMessage"
+    ></h3>
 
-    <div class="flex flex-col items-center mb-8">
-      <div v-for="(row, x) in board" :key="x" class="flex">
-        <TicTacToeCell
-          :value="cell"
-          v-for="(cell, y) in row"
-          :key="y"
-          @click="makeMove(x, y)"
-        />
-      </div>
+    <div class="inline-grid grid-cols-3 gap-0 mb-8">
+      <TicTacToeCell
+        v-for="(cellValue, index) in board"
+        :value="cellValue"
+        @click="markCell(index)"
+        class="col-span-1"
+      />
     </div>
 
-    <div class="text-center">
+    <div v-if="isGameOver" class="text-center">
       <h2
-        v-if="winner"
         :class="`text-6xl font-bold mb-8 ${
-          winner === 'X' ? 'text-pink-500' : 'text-blue-400'
+          !currentPlayer ? 'text-pink-500' : 'text-blue-400'
         }`"
-      >
-        Player '{{ winner }}' wins!
-      </h2>
+        v-html="getStatusMessage"
+      ></h2>
       <button
         @click="resetGame"
         class="px-4 py-2 bg-pink-500 rounded uppercase font-bold hover:bg-pink-600 duration-300"
