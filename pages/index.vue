@@ -6,13 +6,11 @@ const pages = [
 </script>
 
 <template>
-  <div>
-    <ul class="space-y-1">
-      <li v-for="{ title, path } in pages" :key="path">
-        <nuxt-link :to="`/${path}`">{{ title }}</nuxt-link>
-      </li>
-    </ul>
-  </div>
+  <ul class="space-y-1">
+    <li v-for="{ title, path } in pages" :key="path">
+      <nuxt-link :to="`/${path}`">{{ title }}</nuxt-link>
+    </li>
+  </ul>
 </template>
 
 <style scoped>
