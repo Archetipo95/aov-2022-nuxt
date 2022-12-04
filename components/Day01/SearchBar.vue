@@ -1,36 +1,43 @@
 <script setup lang="ts">
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+}
+
 const DEBOUNCE_TIME = 300;
+const API = "https://dummyjson.com/products/search";
 const isLoading = ref(false);
 const giftSearchBar = ref();
 
 const searchTerm = ref("");
-const products = ref([]);
+const products = ref<Product[]>([]);
 
-const findProducts = async (term: string) => {
-  if (term.length === 0) return (products.value = []);
-  isLoading.value = true;
-  try {
-    const res = await fetch(
-      `https://dummyjson.com/products/search?q=${term}&limit=5`
-    );
-    const data = await res.json();
-    products.value = data.products;
-  } catch (error) {
-    console.error(error);
-    alert("Something went wrong!");
-  } finally {
-    isLoading.value = false;
-
-    await nextTick;
-    giftSearchBar.value.focus();
-  }
+const fetchProducts = async (searchTerm: string) => {
+  const res = await fetch(`${API}?q=${searchTerm}`);
+  const json = await res.json();
+  return json.products as Product[];
 };
 
-const debouncedFn = useDebounceFn(() => {
-  findProducts(searchTerm.value.trim());
-}, DEBOUNCE_TIME);
+const getProducts = async (newTerm: string) => {
+  const searchTerm = newTerm.trim();
 
-watch(searchTerm, () => debouncedFn());
+  if (searchTerm.length === 0) products.value = [];
+  else {
+    const result = await fetchProducts(searchTerm);
+    products.value = result;
+  }
+  isLoading.value = false;
+};
+
+watch(products, (newProducts) => {
+  if (newProducts.length === 0 && searchTerm.value)
+    alert("No products found. Please try again.");
+});
+
+watch(searchTerm, () => (isLoading.value = true));
+
+watch(searchTerm, useDebounceFn(getProducts, DEBOUNCE_TIME));
 </script>
 
 <template>
@@ -42,14 +49,13 @@ watch(searchTerm, () => debouncedFn());
       class="py-2 px-4 border-2 border-gray-dark text-black rounded-lg"
       v-model="searchTerm"
       placeholder="Start typing..."
-      :disabled="isLoading"
       autofocus
     />
 
     <p v-if="searchTerm && products.length === 0 && !isLoading">
       No results...
     </p>
-    <p v-if="isLoading">Please wait...</p>
+    <p v-if="isLoading">Searching, please wait...</p>
 
     <ul>
       <li v-for="{ id, title, price } in products" :key="id">
