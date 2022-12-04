@@ -1,9 +1,25 @@
-<script setup>
+<script setup lang="ts">
 const searchTerm = ref("");
+const products = ref();
 
-const findProducts = async (term) => {};
+const findProducts = async (term: string) => {
+  if (!term) {
+    products.value = null;
+    return;
+  }
 
-watch(searchTerm, (newTerm) => findProducts(newTerm));
+  const res = await fetch(`https://dummyjson.com/products/search?q=${term}`);
+  const data = await res.json();
+  products.value = data.products;
+};
+
+const debouncedFn = useDebounceFn(() => {
+  findProducts(searchTerm.value.trim());
+}, 1000);
+
+watch(searchTerm, () => {
+  debouncedFn();
+});
 </script>
 
 <template>
@@ -11,12 +27,12 @@ watch(searchTerm, (newTerm) => findProducts(newTerm));
     <h1 class="text-4xl font-bold">Gift Search Bar</h1>
     <input
       type="text"
-      class="p-2 border-2 border-gray-dark"
+      class="p-2 border-2 border-gray-dark text-black"
       v-model="searchTerm"
       placeholder="Start typing..."
     />
     <ul class="list-disc">
-      <li>Display suggestions here</li>
+      <li v-for="{ id, title } in products" :key="id">{{ title }}</li>
     </ul>
   </div>
 </template>

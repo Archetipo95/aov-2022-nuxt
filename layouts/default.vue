@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <header class="top-0 fixed w-full bg-green-aov text-gray-dark p-3">
       <nuxt-link
         to="/"
@@ -7,7 +7,7 @@
         >Home</nuxt-link
       >
     </header>
-    <div class="flex justify-center items-center min-h-screen">
+    <div class="flex justify-center items-center min-h-screen my-12">
       <slot />
     </div>
     <footer
