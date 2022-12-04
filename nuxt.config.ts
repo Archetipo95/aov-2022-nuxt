@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Title",
+      title: "Martin's Advent Of Vue 2022",
       link: [
         {
           rel: "stylesheet",
@@ -15,5 +15,9 @@ export default defineNuxtConfig({
     cssPath: "@/assets/scss/main.scss",
     viewer: false,
   },
-  modules: ["vite-plugin-vue-type-imports/nuxt", "@nuxtjs/tailwindcss"],
+  modules: [
+    "vite-plugin-vue-type-imports/nuxt",
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
+  ],
 });
