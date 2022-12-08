@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const pages = [
-  { title: "Day 0: Pilot Puzzle TicTacToe", path: "tictactoe" },
-  { title: "Day 1: Gift Search Bar", path: "giftSearchbar" },
+  { title: "Day 00: Pilot Puzzle TicTacToe", path: "day-00" },
+  { title: "Day 01: Gift Search Bar", path: "day-01" },
+  { title: "Day 02: Xmas Joke Generator", path: "day-02" },
 ];
 </script>
 
