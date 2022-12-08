@@ -48,7 +48,7 @@ const handleButtonClick = () => {
         @click="handleButtonClick"
         class="bg-green-aov p-2 rounded-lg hover:bg-green-aov/90"
       >
-        {{ showDelivery ? "Show another" : "Tell me" }}
+        {{ showDelivery ? "Another" : "Tell me!" }}
       </button>
     </div>
   </div>
