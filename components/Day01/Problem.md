@@ -1,9 +1,3 @@
-# Advent Of Vue 2022
-
-## If you didn't get here from an email, read this section! Skip it otherwise.
-
-[Advent Of Vue](https://adventofvue.com) is a series of 24 Vue coding challenges that are sent out every day from December 1 to December 24 via [a dedicated newsletter](https://www.getrevue.co/profile/AdventOfVue). If you'd like to receive more of these puzzles in the future, go ahead and sign up!
-
 ## Problem description
 
 You're tasked with building a debounced search bar for products from [DummyJSON's product API](https://dummyjson.com/docs/products#search). In case you're not familiar with the concept of _debouncing_, it's a technique that allows one to delay a function's execution until a specific amount of time has elapsed since the last call.
