@@ -1,9 +1,3 @@
-# Advent Of Vue 2022
-
-## If you didn't get here from an email, read this section! Skip it otherwise.
-
-[Advent Of Vue](https://adventofvue.com) is a series of 24 Vue coding challenges that are sent out every day from December 1 to December 24 via [a dedicated newsletter](https://www.getrevue.co/profile/AdventOfVue). If you'd like to receive more of these puzzles in the future, go ahead and sign up!
-
 ## Problem description
 
 Time to make a tree!
@@ -11,10 +5,6 @@ Time to make a tree!
 You'll need to update the `ChristmasTree` component so that it renders, well, a Christmas tree.
 
 To get you started in the right direction — you'll need to use recursion to make this happen.
-
-## Hints
-
-Open the hints.md file if you need some help!
 
 ## Example of a solution in action
 
