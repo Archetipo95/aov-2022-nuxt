@@ -1,6 +1,16 @@
-# Nuxt 3 Minimal Starter
+# Advent of Vue 2022 but with Nuxt
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Small project for experimenting with Vue and Nuxt.
+
+Site: https://aov-2022-nuxt.netlify.app
+Storybook: https://aov-2022-nuxt-storybook.netlify.app
+
+## Features
+
+1) Nuxt 3
+2) Storybook 6
+3) TailwindCSS
+4) VueUse
 
 ## Setup
 
@@ -9,12 +19,6 @@ Make sure to install the dependencies:
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -22,7 +26,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -30,13 +34,5 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
