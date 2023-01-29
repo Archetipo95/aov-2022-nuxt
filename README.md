@@ -2,8 +2,8 @@
 
 Small project for experimenting with Vue and Nuxt.
 
-Site: https://aov-2022-nuxt.netlify.app
-Storybook: https://aov-2022-nuxt-storybook.netlify.app
+- Site: https://aov-2022-nuxt.netlify.app
+- Storybook: https://aov-2022-nuxt-storybook.netlify.app
 
 ## Features
 
