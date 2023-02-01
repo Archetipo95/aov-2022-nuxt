@@ -1,3 +1,3 @@
 export type CellProps = {
-  value?: number;
+  value?: 1 | 0;
 };
