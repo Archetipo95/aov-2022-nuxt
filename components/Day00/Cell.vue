@@ -10,6 +10,6 @@ defineProps<CellProps>();
       value ? 'text-pink-500' : 'text-blue-400'
     }`"
   >
-    {{ value === 1 ? "circle" : value === 0 ? "close" : "" }}
+    {{ value === 1 ? "circle" : value === 0 ? "close" : "" }} BuG 2
   </div>
 </template>
