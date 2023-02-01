@@ -8,9 +8,10 @@ Small project for experimenting with Vue and Nuxt.
 ## Features
 
 1) Nuxt 3
-2) Storybook 6
-3) TailwindCSS
-4) VueUse
+2) TailwindCSS
+3) VueUse
+4) Storybook 6
+5) Chromatic
 
 ## Setup
 
