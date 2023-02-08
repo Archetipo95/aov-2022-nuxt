@@ -35,3 +35,26 @@ export const Circle = Template.bind({}) as StorybookTemplateType<CellProps>;
 Circle.args = {
   value: 1,
 };
+
+// Just for Chromatic
+
+// const Snapshot: Story<CellProps> = () => ({
+//   template: "<Story>Default</Story>",
+// });
+
+// export const Circle2 = Snapshot.bind({}) as StorybookTemplateType<CellProps>;
+// Circle2.list = [Default, Cross, Circle];
+
+// console.log(Default);
+
+// export const Snapshot = () => (
+//   <SnapshotContainer>
+//     {[Default, Cross, Circle].map((Story, index) => (
+//       <Story key={index} {...Story.args} />
+//     ))}
+//   </SnapshotContainer>
+// );
+
+// Snapshot.parameters = {
+//   chromatic: { disableSnapshot: false },
+// };
