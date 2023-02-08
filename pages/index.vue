@@ -5,6 +5,7 @@ const pages = [
   { title: "Day 02: Xmas Joke Generator", path: "day-02" },
   { title: "Day 03: Xmas Countdown", path: "day-03" },
   { title: "Day 04: Recursive Tree", path: "day-04" },
+  { title: "Day 05: Gift Label Maker", path: "day-05" },
 ];
 </script>
 
