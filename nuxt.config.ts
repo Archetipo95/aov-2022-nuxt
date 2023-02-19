@@ -1,3 +1,5 @@
+import svgLoader from 'vite-svg-loader'
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -20,4 +22,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
   ],
+  vite:{
+    plugins: [svgLoader()]
+  }
 });

@@ -1,5 +1,9 @@
 {
   "private": true,
+  "name": "aov-2022-nuxt",
+  "version": "0.0.0",
+  "readme": "ERROR: No README data found!",
+  "_id": "@",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -24,8 +28,7 @@
     "unplugin-auto-import": "^0.14.3",
     "vite-plugin-vue-type-imports": "^0.2.4"
   },
-  "name": "aov-2022-nuxt",
-  "version": "0.0.0",
-  "readme": "ERROR: No README data found!",
-  "_id": "@"
+  "dependencies": {
+    "vite-svg-loader": "^4.0.0"
+  }
 }
