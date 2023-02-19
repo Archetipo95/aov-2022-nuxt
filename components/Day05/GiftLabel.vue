@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Santa from "@/assets/images/santa.svg?component";
+
 const from = ref();
 const to = ref();
 </script>
@@ -18,7 +20,9 @@ const to = ref();
             p-4
           "
         >
-          <img src="/assets/santa.svg" alt="" class="max-w-[12em]" />
+          <!-- <img src="/assets/santa.svg" alt="" class="max-w-[12em]" /> -->
+          <Santa class="h-full max-w-[12em]" />
+
           <div>
             <h1 class="font-serif text-4xl">Happy Holidays!</h1>
             <div class="mt-4 bg-white text-black p-2 rounded">TO: {{ to }}</div>
