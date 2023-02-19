@@ -7,6 +7,7 @@ const pages = [
   { title: "Day 04: Recursive Tree", path: "day-04" },
   { title: "Day 05: Gift Label Maker", path: "day-05" },
   { title: "Day 06: Price Comparator", path: "day-06" },
+  { title: "Day 07: Drag Gifts", path: "day-07" },
 ];
 </script>
 
