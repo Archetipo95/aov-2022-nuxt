@@ -26,9 +26,8 @@
     "nuxt": "^3.2.2",
     "sass": "^1.58.3",
     "unplugin-auto-import": "^0.14.3",
+    "unplugin-icons": "^0.15.3",
+    "unplugin-vue-components": "^0.24.0",
     "vite-plugin-vue-type-imports": "^0.2.4"
-  },
-  "dependencies": {
-    "vite-svg-loader": "^4.0.0"
   }
 }
