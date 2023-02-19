@@ -11,9 +11,12 @@ const pages = [
 </script>
 
 <template>
-  <ul class="space-y-1">
+  <ul class="grid grid-cols-4 gap-4">
     <li v-for="{ title, path } in pages" :key="path">
-      <nuxt-link :to="`/${path}`">{{ title }}</nuxt-link>
+      <nuxt-link :to="`/${path}`"
+        class="border h-[180px] w-[170px] rounded-lg p-5 flex justify-center items-center hover:bg-white hover:text-gray-dark transition-all">
+        {{ title }}
+      </nuxt-link>
     </li>
   </ul>
 </template>
