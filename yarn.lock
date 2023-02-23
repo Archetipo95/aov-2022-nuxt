@@ -1700,36 +1700,12 @@
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.0.tgz#c7bd7e9a516514e612d5d2e511ffc399e0eac322"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@3.2.2":
+"@nuxt/kit@3.2.2", "@nuxt/kit@^3.2.0", "@nuxt/kit@^3.2.2":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.2.2.tgz#5b369122ce853f99ecaf8cddc950ad8c4ca47e58"
   integrity sha512-T3UeLxGSNl7dQgKzmtBbPEkUiiBYgXI+KkemmpkYbQK/l+bWy2f9VQw/Rl0HkQLfRTE2fS8q8jhsOedFiEnHQQ==
   dependencies:
     "@nuxt/schema" "3.2.2"
-    c12 "^1.1.2"
-    consola "^2.15.3"
-    defu "^6.1.2"
-    globby "^13.1.3"
-    hash-sum "^2.0.0"
-    ignore "^5.2.4"
-    jiti "^1.17.1"
-    knitwork "^1.0.0"
-    lodash.template "^4.5.0"
-    mlly "^1.1.1"
-    pathe "^1.1.0"
-    pkg-types "^1.0.2"
-    scule "^1.0.0"
-    semver "^7.3.8"
-    unctx "^2.1.2"
-    unimport "^2.2.4"
-    untyped "^1.2.2"
-
-"@nuxt/kit@^3.1.2", "@nuxt/kit@^3.2.0":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.2.1.tgz#b656e0a4be8c223ba3e055ba5a286a7e5921f1f5"
-  integrity sha512-EzhoDurJQIBMPkAHOriHqQoZE4grtGGM9KzZ+kLbl9lZ2+T8m8nR7ZlZl/g0PmdZLlPK6wYeEKNoINQrk4zP+w==
-  dependencies:
-    "@nuxt/schema" "3.2.1"
     c12 "^1.1.2"
     consola "^2.15.3"
     defu "^6.1.2"
@@ -1761,25 +1737,6 @@
     postcss-loader "^4.1.0"
     postcss-url "^10.1.1"
     semver "^7.3.4"
-
-"@nuxt/schema@3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@nuxt/schema/-/schema-3.2.1.tgz#8a84283765e15fc6386bf9396fd634e3cd049fee"
-  integrity sha512-XyEZILcoW5oqgsLy3d8HNtI2zGI/qOYVZFNL0YRVPEiMfUnOj4cQAJ9m9H0KPfELRs/YM+KdlHdRM7f98hCiEw==
-  dependencies:
-    c12 "^1.1.2"
-    create-require "^1.1.1"
-    defu "^6.1.2"
-    hookable "^5.4.2"
-    jiti "^1.17.1"
-    pathe "^1.1.0"
-    pkg-types "^1.0.2"
-    postcss-import-resolver "^2.0.0"
-    scule "^1.0.0"
-    std-env "^3.3.2"
-    ufo "^1.1.0"
-    unimport "^2.2.4"
-    untyped "^1.2.2"
 
 "@nuxt/schema@3.2.2":
   version "3.2.2"
@@ -9210,6 +9167,13 @@ magic-string@^0.29.0:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.13"
 
+magic-string@^0.30.0:
+  version "0.30.0"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.0.tgz#fd58a4748c5c4547338a424e90fa5dd17f4de529"
+  integrity sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.13"
+
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
@@ -9509,6 +9473,13 @@ minimatch@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-6.2.0.tgz#2b70fd13294178c69c04dfc05aebdb97a4e79e42"
   integrity sha512-sauLxniAmvnhhRjFwPNnJKaPFYyddAgbYdeUpHULtCT/GhzdCx/MDNy+Y40lBxTQUrMzDE8e0S43Z5uqfO0REg==
+  dependencies:
+    brace-expansion "^2.0.1"
+
+minimatch@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-7.1.0.tgz#8d3b0a361b02b4420c89fb2b8295621429c340ea"
+  integrity sha512-ZRvZsrVXiuB/QDlJx7WPymFyOHQUntQOEH3vFIwCzs/fDnH/siHZQAmI6Zamx1J9u9S66ucgKXU0CnqHfi8Z4g==
   dependencies:
     brace-expansion "^2.0.1"
 
@@ -13319,6 +13290,23 @@ unimport@^2.2.4:
     strip-literal "^1.0.0"
     unplugin "^1.0.1"
 
+unimport@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/unimport/-/unimport-3.0.1.tgz#13fe4591d651775b56fafcd1ddbf2d889ee47de5"
+  integrity sha512-agdjfSLRp0Yi7qyRm3bwTdQR3NTN1JmuQmTj2b8hNZWTnphq5k4NugOad12t21ukD1uXvnYu1Tji7aNmzmCZGQ==
+  dependencies:
+    "@rollup/pluginutils" "^5.0.2"
+    escape-string-regexp "^5.0.0"
+    fast-glob "^3.2.12"
+    local-pkg "^0.4.3"
+    magic-string "^0.30.0"
+    mlly "^1.1.1"
+    pathe "^1.1.0"
+    pkg-types "^1.0.2"
+    scule "^1.0.0"
+    strip-literal "^1.0.1"
+    unplugin "^1.1.0"
+
 union-value@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/union-value/-/union-value-1.0.1.tgz#0b6fe7b835aecda61c6ea4d4f02c14221e109847"
@@ -13411,18 +13399,19 @@ unpipe@1.0.0, unpipe@~1.0.0:
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==
 
-unplugin-auto-import@^0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.14.3.tgz#e25ede11e6013e7f115dc946fc489d814839ad8d"
-  integrity sha512-6eCHLnsOPwLjNZHQkb95S5jbTWW2JH/jKiQUzTeWJAb8XFpDFZPEhxDeIDAr7HOF76Nz6EGhKF8PQduzygdICg==
+unplugin-auto-import@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.15.0.tgz#bc6148a52e189f9ca48981cc31aa0726cdb8b9fc"
+  integrity sha512-TYlqpTiX1jlbc2+EVaM0jfwdvbIdDWLHAPqw/l+7+QRm9rkqK2j8LQGjY3tAPbe66r5EirgTlrrXQG/MNVTv7w==
   dependencies:
     "@antfu/utils" "^0.7.2"
-    "@nuxt/kit" "^3.1.2"
+    "@nuxt/kit" "^3.2.2"
     "@rollup/pluginutils" "^5.0.2"
     local-pkg "^0.4.3"
-    magic-string "^0.27.0"
-    unimport "^2.2.4"
-    unplugin "^1.0.1"
+    magic-string "^0.30.0"
+    minimatch "^7.1.0"
+    unimport "^3.0.0"
+    unplugin "^1.1.0"
 
 unplugin-icons@^0.15.3:
   version "0.15.3"
