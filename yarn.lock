@@ -1979,7 +1979,7 @@
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.0.tgz#c7bd7e9a516514e612d5d2e511ffc399e0eac322"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@3.3.1", "@nuxt/kit@^3.2.0":
+"@nuxt/kit@3.3.1", "@nuxt/kit@^3.2.0", "@nuxt/kit@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.3.1.tgz#93e02a41d9adc7369d704deb88ae143c29554a4e"
   integrity sha512-zb7/2FUIB1g7nl6K6qozUzfG5uu4yrs9TQjZvpASnPBZ/x1EuJX5k3AA71hMMIVBEX9Adxvh9AuhDEHE5W26Zg==
@@ -2109,14 +2109,14 @@
     vite-plugin-checker "^0.5.6"
     vue-bundle-renderer "^1.0.2"
 
-"@nuxtjs/tailwindcss@^6.4.1":
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-6.4.1.tgz#e4018312afd087b7f040b63174547918e81b1c42"
-  integrity sha512-b8c6h+iiHJJ/rw/IirmYlF0RaIGVIVFmZXdHYPuDW/Mf6WAEz8IkAicyO5gRL3jYKp98kld067XPGsumDhaVVg==
+"@nuxtjs/tailwindcss@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-6.6.0.tgz#e3fb3d477f25b00d416d151822bd835d46d9afab"
+  integrity sha512-lzUicI2LM6gCbgTkdOJN4HSOXNCWi+fosKzBnB2Z/M+sJxSHDXV1OosuQkDDJEzyJUtzTU0tvk1I7ij20JZVOw==
   dependencies:
-    "@nuxt/kit" "^3.2.0"
+    "@nuxt/kit" "^3.3.1"
     "@nuxt/postcss8" "^1.1.3"
-    autoprefixer "^10.4.13"
+    autoprefixer "^10.4.14"
     chalk "^5.2.0"
     chokidar "^3.5.3"
     clear-module "^4.1.2"
@@ -2124,11 +2124,11 @@
     defu "^6.1.2"
     pathe "^1.1.0"
     postcss "^8.4.21"
-    postcss-custom-properties "^13.1.3"
+    postcss-custom-properties "^13.1.4"
     postcss-nesting "^11.2.1"
     tailwind-config-viewer "^1.7.2"
     tailwindcss "^3.2.7"
-    ufo "^1.1.0"
+    ufo "^1.1.1"
 
 "@opentelemetry/api@^1.0.1":
   version "1.4.1"
@@ -4518,19 +4518,7 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@^10.2.5, autoprefixer@^10.4.13:
-  version "10.4.13"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.13.tgz#b5136b59930209a321e9fa3dca2e7c4d223e83a8"
-  integrity sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==
-  dependencies:
-    browserslist "^4.21.4"
-    caniuse-lite "^1.0.30001426"
-    fraction.js "^4.2.0"
-    normalize-range "^0.1.2"
-    picocolors "^1.0.0"
-    postcss-value-parser "^4.2.0"
-
-autoprefixer@^10.4.14:
+autoprefixer@^10.2.5, autoprefixer@^10.4.14:
   version "10.4.14"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.14.tgz#e28d49902f8e759dd25b153264e862df2705f79d"
   integrity sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==
@@ -5176,7 +5164,7 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001426:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400:
   version "1.0.30001448"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001448.tgz#ca7550b1587c92a392a2b377cd9c508b3b4395bf"
   integrity sha512-tq2YI+MJnooG96XpbTRYkBxLxklZPOdLmNIOdIhvf7SNJan6u5vCKum8iT7ZfCt70m1GPkuC7P3TtX6UuhupuA==
@@ -11059,10 +11047,10 @@ postcss-convert-values@^5.1.3:
     browserslist "^4.21.4"
     postcss-value-parser "^4.2.0"
 
-postcss-custom-properties@^13.1.3:
-  version "13.1.3"
-  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-13.1.3.tgz#bee287086290cb03958c223576dc8fe81d0aa253"
-  integrity sha512-15equAsfqtnr7jyzes6vyaGdAiNmKd+50FZ35/E/huBNBt7PgGMSNL/4o765nnNoP2dmaMJklb3FwJf3fdRcpA==
+postcss-custom-properties@^13.1.4:
+  version "13.1.4"
+  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-13.1.4.tgz#590e5770137011001602806da51243b6c82c1cde"
+  integrity sha512-iSAdaZrM3KMec8cOSzeTUNXPYDlhqsMJHpt62yrjwG6nAnMtRHPk5JdMzGosBJtqEahDolvD5LNbcq+EZ78o5g==
   dependencies:
     "@csstools/cascade-layer-name-parser" "^1.0.0"
     "@csstools/css-parser-algorithms" "^2.0.0"
