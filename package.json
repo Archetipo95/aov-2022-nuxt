@@ -25,7 +25,7 @@
     "chromatic": "^6.17.2",
     "nuxt": "^3.3.1",
     "sass": "^1.59.3",
-    "unplugin-auto-import": "^0.15.1",
+    "unplugin-auto-import": "^0.15.2",
     "unplugin-icons": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
     "vite-plugin-vue-type-imports": "^0.2.4"
