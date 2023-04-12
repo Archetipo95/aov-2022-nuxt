@@ -20,7 +20,7 @@
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-vite": "^0.4.2",
-    "@storybook/vue3": "^6.5.16",
+    "@storybook/vue3": "^7.0.4",
     "@vueuse/nuxt": "^9.13.0",
     "chromatic": "^6.17.2",
     "nuxt": "^3.3.2",
