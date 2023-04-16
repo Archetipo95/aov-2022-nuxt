@@ -2,8 +2,6 @@
   "private": true,
   "name": "aov-2022-nuxt",
   "version": "0.0.0",
-  "readme": "ERROR: No README data found!",
-  "_id": "@",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -16,16 +14,16 @@
     "chromatic": "chromatic --exit-zero-on-changes"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.6.5",
+    "@nuxtjs/tailwindcss": "^6.6.6",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-vite": "^0.4.2",
     "@storybook/vue3": "^6.5.16",
-    "@vueuse/nuxt": "^9.13.0",
-    "chromatic": "^6.17.2",
-    "nuxt": "^3.3.2",
-    "sass": "^1.60.0",
-    "unplugin-auto-import": "^0.15.2",
+    "@vueuse/nuxt": "^10.0.2",
+    "chromatic": "^6.17.3",
+    "nuxt": "^3.4.1",
+    "sass": "^1.62.0",
+    "unplugin-auto-import": "^0.15.3",
     "unplugin-icons": "^0.16.1",
     "unplugin-vue-components": "^0.24.1",
     "vite-plugin-vue-type-imports": "^0.2.4"
