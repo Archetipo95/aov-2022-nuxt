@@ -21,7 +21,7 @@
     "@storybook/vue3": "^6.5.16",
     "@vueuse/nuxt": "^10.0.2",
     "chromatic": "^6.17.3",
-    "nuxt": "^3.4.1",
+    "nuxt": "^3.5.0",
     "sass": "^1.62.0",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-icons": "^0.16.1",
