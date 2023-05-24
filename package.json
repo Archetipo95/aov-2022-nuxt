@@ -17,7 +17,7 @@
     "@nuxtjs/tailwindcss": "^6.6.6",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/builder-vite": "^7.0.17",
     "@storybook/vue3": "^6.5.16",
     "@vueuse/nuxt": "^10.0.2",
     "chromatic": "^6.17.3",
