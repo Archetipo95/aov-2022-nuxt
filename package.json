@@ -14,18 +14,19 @@
     "chromatic": "chromatic --exit-zero-on-changes"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@nuxtjs/tailwindcss": "^6.11.4",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-vite": "^0.4.2",
     "@storybook/vue3": "^6.5.16",
-    "@vueuse/nuxt": "^10.2.1",
-    "chromatic": "^6.19.9",
-    "nuxt": "^3.6.1",
-    "sass": "^1.63.6",
-    "unplugin-auto-import": "^0.16.6",
-    "unplugin-icons": "^0.16.3",
-    "unplugin-vue-components": "^0.25.1",
-    "vite-plugin-vue-type-imports": "^0.2.4"
-  }
+    "@vueuse/nuxt": "^10.9.0",
+    "chromatic": "^11.3.0",
+    "nuxt": "^3.11.2",
+    "sass": "^1.74.1",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-icons": "^0.18.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite-plugin-vue-type-imports": "^0.2.5"
+  },
+  "packageManager": "pnpm@8.15.5"
 }
