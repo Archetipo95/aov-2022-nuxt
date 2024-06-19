@@ -2653,7 +2653,7 @@ packages:
       vite-plugin-inspect: 0.8.3(@nuxt/kit@3.11.2)(vite@4.5.3)
       vite-plugin-vue-inspector: 4.0.2(vite@4.5.3)
       which: 3.0.1
-      ws: 8.16.0
+      ws: 8.17.1
     transitivePeerDependencies:
       - '@unocss/reset'
       - '@vue/composition-api'
@@ -4247,7 +4247,7 @@ packages:
       util-deprecate: 1.0.2
       watchpack: 2.4.1
       webpack: 4.47.0
-      ws: 8.16.0
+      ws: 8.17.1
       x-default-browser: 0.4.0
     transitivePeerDependencies:
       - '@storybook/mdx2-csf'
@@ -17372,8 +17372,8 @@ packages:
       typedarray-to-buffer: 3.1.5
     dev: true
 
-  /ws@8.16.0:
-    resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
+  /ws@8.17.1:
+    resolution: {integrity: sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
